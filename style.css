@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.stories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.story {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.story:hover {
+    transform: scale(1.02);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+}
+
+.story-content {
+    padding: 15px;
+}
+
+.story-title {
+    margin-top: 0;
+    color: #333;
+}
+
+.story-body {
+    color: #555;
+}
+
+.story-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.story-link:hover {
+    text-decoration: underline;
+}
+
+.story-controls {
+    margin-top: 10px;
+}
+
+.story-controls input[type="submit"] {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.story-controls input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+

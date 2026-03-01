@@ -1,0 +1,2 @@
+Table	Create Table
+stories	CREATE TABLE `stories` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `user_id` int(11) DEFAULT NULL,\n  `title` varchar(255) DEFAULT NULL,\n  `body` text DEFAULT NULL,\n  `link` varchar(255) DEFAULT NULL,\n  `image` varchar(500) DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  KEY `user_id` (`user_id`),\n  CONSTRAINT `stories_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci

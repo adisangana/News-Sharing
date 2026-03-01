@@ -1,0 +1,2 @@
+Table	Create Table
+comments	CREATE TABLE `comments` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `story_id` int(11) DEFAULT NULL,\n  `user_id` int(11) DEFAULT NULL,\n  `comment` mediumtext NOT NULL,\n  PRIMARY KEY (`id`),\n  KEY `story_id` (`story_id`),\n  KEY `user_id` (`user_id`),\n  CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`story_id`) REFERENCES `stories` (`id`),\n  CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
